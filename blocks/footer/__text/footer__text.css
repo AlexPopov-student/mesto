@@ -1,0 +1,14 @@
+.footer__text{
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #545454;
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .footer__text{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

@@ -1,0 +1,19 @@
+.profile__info_subtitle{
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    line-height: 22px;
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .profile__info_subtitle{
+        width: 189px;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+    }
+}

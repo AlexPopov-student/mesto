@@ -1,0 +1,18 @@
+.profile__button_content{
+    position: absolute;
+    top: 14px;
+    left: 64px;
+    width: 22px;
+    height: 22px;
+}
+
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .profile__button_content{
+        top: 17px;
+        left: 134px;
+        width: 16px;
+        height: 16px;
+    }
+}

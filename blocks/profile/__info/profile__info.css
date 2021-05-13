@@ -1,0 +1,29 @@
+.profile__info{
+    margin: 0;
+    padding: 0;
+    width: 340px;
+    display: grid;
+    grid-template-columns: 296px 24px;
+    grid-template-rows: 64px max-content;
+    row-gap: 16px;
+    column-gap: 18px;
+    grid-template-areas: 
+        'title edit-box'
+        'subtitle .';
+    color: white;
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .profile__info{
+        margin-left: 12.5px;
+        width: 282px;
+        grid-template-columns: 189px 24px;
+        grid-template-rows: max-content;
+        row-gap: 16px;
+        column-gap: 10px;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+}

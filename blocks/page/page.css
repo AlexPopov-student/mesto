@@ -1,0 +1,23 @@
+.page {
+    width: 100%;
+    min-width: 320px;
+    background-color: #2A2C2F;
+    margin: 0 auto;
+    font-family: 'Inter', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-size: cover;
+ }
+
+ @media screen and (max-width: 1023px) {
+    .page {
+       width: 100%;
+    }
+ }
+ 
+ @media screen and (max-width: 767px) {
+    .page {
+       min-width: 320px;
+    }
+ }

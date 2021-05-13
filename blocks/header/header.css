@@ -1,0 +1,16 @@
+.header{
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 36.25px;
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .header{
+        width: 320px;
+    }
+}

@@ -1,0 +1,32 @@
+.profile{
+    width: 880px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 168.75px 338px 150px;
+    grid-template-areas: 
+        'image info button';
+    box-sizing: border-box;
+}
+
+/*В брифе не указано, но допустим, что оставляем блок по центру и "воздух" справа и слева*/
+
+@media screen and (max-width: 923px){
+    .profile{
+        margin: 0 auto;
+        grid-template-columns: 286px;
+        grid-template-areas: 
+        'image' 
+        'info' 
+        'button';
+    }
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .profile{
+        margin: 0 auto;
+        width: 286px;
+        margin-bottom: 36px;
+    }
+}

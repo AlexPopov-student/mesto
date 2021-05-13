@@ -1,0 +1,22 @@
+/* Привязываем все используемыe блоки, но сначала normalize */
+@import url(../vendors/normalize.css);
+@import url(../vendors/fonts.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__line/header__line.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__image/profile__image.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__info/_title/profile__info_title.css);
+@import url(../blocks/profile/__info/_subtitle/profile__info_subtitle.css);
+@import url(../blocks/profile/__info/_edit-box/profile__info_edit-box.css);
+@import url(../blocks/profile/__button/profile__button.css);
+@import url(../blocks/profile/__button/_content/profile__button_content.css);
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__container/card__container.css);
+@import url(../blocks/card/__container/_image/card__container_image.css);
+@import url(../blocks/card/__container/_footnote/card__container_footnote.css);
+@import url(../blocks/card/__container/_heart/card__container_heart.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__text/footer__text.css);

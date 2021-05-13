@@ -1,0 +1,23 @@
+.profile__info_edit-box{
+    width: 10px;
+    height: 10px;
+    padding: 7px;
+    border: 1px solid #FFFFFF;
+    align-self: end;
+    margin-bottom: 7px;
+}
+
+.profile__info_edit-box:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px){
+    .profile__info_edit-box{
+        width: 7.5px;
+        height: 7.5px;
+        padding: 5.25px;
+        margin-bottom: 5px;
+    }
+}

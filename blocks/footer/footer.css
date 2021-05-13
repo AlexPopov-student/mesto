@@ -1,0 +1,20 @@
+.footer{
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 880px;
+}
+
+/*В брифе не указано, но допустим, что оставляем блок по центру и "воздух" справа и слева*/
+@media screen and (max-width: 1023px){
+    .footer{
+        width: 581px;
+    }
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .footer{
+        width:282px;
+        margin-bottom: 36px;
+    }
+}
