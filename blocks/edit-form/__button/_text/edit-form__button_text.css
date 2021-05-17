@@ -4,13 +4,13 @@
     color: white;
     font-family: 'Inter', Arial, sans-serif;
     font-size: 18px;
-    line-height: 22px
+    line-height: 22px;
 }
 
 /*Вариант для смартфона*/
 @media screen and (max-width: 767px) {
     .edit-form__button_text{
         font-size: 14px;
-        line-height: 17px
+        line-height: 17px;
     }
 }
