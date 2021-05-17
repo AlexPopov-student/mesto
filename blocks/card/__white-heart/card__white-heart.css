@@ -1,4 +1,4 @@
-.card__container_white-heart{
+.card__white-heart{
     width: 22px;
     height: 19px;
     position: absolute;
@@ -9,12 +9,12 @@
     background-image: url(../../../../images/white-heart.png);
 }
 
-.card__container_white-heart:hover{
+.card__white-heart:hover{
     opacity: 0.5;
     cursor: pointer;
 }
 
-.card__container_white-heart:active{
+.card__white-heart:active{
     background-image: url(../../../../images/black-heart.png);
     opacity: 1;
 }

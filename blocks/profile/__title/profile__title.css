@@ -1,4 +1,4 @@
-.profile__info_title{
+.profile__title{
     margin: 0;
     padding: 0;
     width: 294px;
@@ -11,7 +11,7 @@
 
 /*Вариант для смартфона*/
 @media screen and (max-width: 1023px) {
-    .profile__info_title{
+    .profile__title{
         width: 189px;
         margin: 0 auto;
         padding: 0;

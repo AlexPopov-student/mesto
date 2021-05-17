@@ -3,12 +3,12 @@ let openPopup = document.querySelector('#popup');
     popupToggle = document.querySelector('#popup_opened');
     popupClose = document.querySelector('.edit-form__closemark');
     formElement = document.querySelector('.edit-form');
-    nameInput = document.querySelector('.profile__info_title');
-    jobInput = document.querySelector('.profile__info_subtitle');
+    nameInput = document.querySelector('.profile__title');
+    jobInput = document.querySelector('.profile__subtitle');
     anewName = document.querySelector('#name');
     anewOccupation = document.querySelector('#occupation');
     editForm = document.querySelector('.edit-form__button');
-    likeCurrent = document.querySelector('.card__container_white-heart');
+    likeCurrent = document.querySelector('.card__white-heart');
 
 //открываем форму
 popupToggle.onclick = function(){
@@ -29,7 +29,7 @@ popupClose.onclick = function(){
 
 //включаем "сердечки"
 likeCurrent.onclick = function(){
-    likeCurrent.className = 'card__container_black-heart';
+    likeCurrent.className = 'card__black-heart';
     }
 
 //а теперь редактируем формочки 
