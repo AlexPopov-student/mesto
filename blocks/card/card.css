@@ -19,6 +19,7 @@
 /*Вариант для смартфона*/
 @media screen and (max-width: 767px) {
     .card{
+        margin-left: calc((100vw - 282px)/2);
         width: 282px;
         margin-bottom: 48px;
     }

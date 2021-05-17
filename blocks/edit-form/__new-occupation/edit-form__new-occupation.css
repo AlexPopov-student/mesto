@@ -1,0 +1,17 @@
+.edit-form__new-occupation{
+    margin: 0 auto;
+    width: 358px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    border: none;
+    margin-bottom: 13px;
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .edit-form__new-occupation{
+        width: 238px;
+    }
+}

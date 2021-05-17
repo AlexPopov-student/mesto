@@ -5,6 +5,7 @@
     border: 1px solid #FFFFFF;
     align-self: end;
     margin-bottom: 7px;
+    transition: 0.4s; /*для эстетических целей*/
 }
 
 .profile__info_edit-box:hover{
@@ -13,7 +14,7 @@
 }
 
 /*Вариант для смартфона*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1023px){
     .profile__info_edit-box{
         width: 7.5px;
         height: 7.5px;

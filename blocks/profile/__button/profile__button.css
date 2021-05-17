@@ -7,6 +7,7 @@
     box-sizing: border-box;
     border-radius: 2px;
     position: relative;
+    transition: 0.4s; /*для эстетики*/ 
 }
 
 .profile__button:hover{
@@ -15,7 +16,7 @@
 }
 
 /*Вариант для смартфона*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1023px){
     .profile__button{
         margin: 0 auto;
         width: 282px;

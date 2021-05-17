@@ -15,62 +15,73 @@
         </header>
 
         <section class="profile">
-          <img class="profile__image" src="./images/coustou.jpg" alt="Портрет Ж.-И. Кусто">
-          <div class="profile__info">
-            <h1 class="profile__info_title">Жак-Ив Кусто</h1>
-            <img src="./images/pencil.png" class="profile__info_edit-box">
-            <p class="profile__info_subtitle">Исследователь океана</p>
-          </div>
-          <div class="profile__button">
-            <img src="./images/plus.png" alt="плюс>" href="" class="profile__button_content">
-          </div>
+            <img class="profile__image" src="./images/coustou.jpg" alt="Портрет Ж.-И. Кусто">
+            <div class="profile__info">
+              <h1 class="profile__info_title">Жак-Ив Кусто</h1>
+              <img src="./images/pencil.png" class="profile__info_edit-box" id="popup_opened">
+              <!-- Да, я могу сделать и без id по вызову через класс. Я так тоже сделал в js файле. Но чисто потренироваться дёргать элементы через id тоже нужно -->
+              <p class="profile__info_subtitle">Исследователь океана</p>
+            </div>
+            <div class="profile__button">
+              <img src="./images/plus.png" alt="плюс" href="" class="profile__button_content">
+              <!-- Здесь я вставляю плюсик картинкой. А в другом месте - через амперсанд. Могу всё делать картинкой, но это не эффективно -->>
+            </div>
         </section>
 
         <section class="card">
           <div class="card__container">
             <img class="card__containet_image" src="./images/karachaevsk.jpg" alt="Вид города Карачаевска">
             <p class="card__container_footnote">Карачаевск</p>
-            <div class="card__container_heart" href="#"></div>
+            <div class="card__container_white-heart" href="#"></div>
           </div>
           <div class="card__container">
             <img class="card__containet_image" src="./images/elbrus.png" alt="Вид горы Эльбрус на горизонте">
             <p class="card__container_footnote">Эльбрус</p>
-            <svg class="card__container_heart" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
-            </svg>
+            <div class="card__container_white-heart" href="#"></div>
           </div>
           <div class="card__container">
             <img class="card__containet_image" src="./images/dombay.png" alt="Горные кручи Домбая">
             <p class="card__container_footnote">Домбай</p>
-            <svg class="card__container_heart" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
-            </svg>
+            <div class="card__container_white-heart" href="#"></div>
           </div>
           <div class="card__container">
             <img class="card__containet_image" src="./images/elbrus.png" alt="Вид горы Эльбрус на горизонте">
             <p class="card__container_footnote">Эльбрус</p>
-            <svg class="card__container_heart" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
-            </svg>
+            <div class="card__container_white-heart" href="#"></div>
           </div>
           <div class="card__container">
             <img class="card__containet_image" src="./images/dombay.png" alt="Горные кручи Домбая">
             <p class="card__container_footnote">Домбай</p>
-            <svg class="card__container_heart" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
-            </svg>
+            <div class="card__container_white-heart" href="#"></div>
           </div>
           <div class="card__container">
             <img class="card__containet_image" src="./images/karachaevsk.jpg" alt="Вид города Карачаевска">
             <p class="card__container_footnote">Карачаево-Черкессия</p>
-            <svg class="card__container_heart" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.2991 9.78586C22.567 7.54338 22.567 3.90213 20.2991 1.68186C18.0311 -0.560619 14.3486 -0.560619 12.0806 1.68186L10.9804 2.792L9.88007 1.70406C7.61215 -0.560619 3.92957 -0.560619 1.6841 1.68186C0.583822 2.76979 0 4.21297 0 5.74496C0 7.27695 0.606277 8.72013 1.6841 9.80806L10.9804 19L20.2991 9.78586ZM1.4371 5.74496C1.4371 4.59042 1.8862 3.52469 2.71702 2.72539C3.5703 1.88168 4.67058 1.45983 5.77086 1.45983C6.87114 1.45983 7.97142 1.88168 8.8247 2.72539L10.9804 4.83465L13.136 2.70318C14.8201 1.03798 17.582 1.03798 19.2437 2.70318C20.0521 3.50248 20.5236 4.56821 20.5236 5.72276C20.5236 6.8773 20.0745 7.94303 19.2437 8.74233L10.9804 16.9351L2.71702 8.76453C1.90865 7.94303 1.4371 6.8773 1.4371 5.74496Z" fill="black"/>
-            </svg>
+            <div class="card__container_white-heart" href="#"></div>
           </div>
         </section>
 
         <footer class="footer">
           <p class="footer__text">&copy;2021 Mesto Russia</p>
         </footer>
+
+        <section class="popup" id="popup">
+          <form class="edit-form">
+            <!--Сначала прописываем кнопку закрытия поп-ап формочки-->
+            <button type="button" class="edit-form__closemark" aria-label="Закрыть форму">&times;</button>
+            <!-- А здесь вставка через амперсанд. Это легче для обработки кода и быстрее выполняется -->>
+            <!--Потом заголовок и два поля для закполнения-->
+            <h2 class="edit-form__title">Редактировать профиль</h2>
+            <input type="text" class="edit-form__new-name" name="name" id="name" placeholder="Жак-Ив Кусто" required>
+            <div class="edit-form__line"></div>
+             <input type="text" class="edit-form__new-occupation" name="occupation" id="occupation" placeholder="Исследователь моря" required>
+            <div class="edit-form__line"></div>
+            <!--Ну и кнопочка сохранить-->
+            <input type="submit" class="edit-form__button" placeholder="Сохранить" value="Сохранить">
+          </form>
+      </section>
+
     </div>
+    <script src="./scripts/popup.js"></script>
 </body>
+</html>

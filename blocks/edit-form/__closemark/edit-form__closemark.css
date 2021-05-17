@@ -1,0 +1,34 @@
+.edit-form__closemark{
+    padding: 0;
+    position: absolute;
+    background: none;
+    color: white;
+    border: none;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    left: 421.71px;
+    top: -40px;
+    width: 48px;
+    height: 48px;
+    transition: 0.5s; /*чисто для красоты*/
+}
+
+.edit-form__closemark:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.edit-form__closemark:active{
+    overflow: hidden;
+    margin: 0;
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .edit-form__closemark{
+        left: 245.62px;
+        top: -54.62px;
+        width: 26px;
+        height: 26px;
+    }
+}

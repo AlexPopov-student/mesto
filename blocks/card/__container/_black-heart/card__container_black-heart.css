@@ -1,0 +1,20 @@
+.card__container_black-heart{
+    width: 22px;
+    height: 19px;
+    position: absolute;
+    top: 312px;
+    left: 240px;
+    z-index: 2;
+    overflow: hidden;
+    background-image: url(../../../../images/black-heart.png);
+}
+
+.card__container_black-heart:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.card__container_black-heart:active{
+    background-image: url(../../../../images/white-heart.png);
+    opacity: 1;
+}

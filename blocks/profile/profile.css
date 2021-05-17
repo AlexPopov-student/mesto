@@ -11,9 +11,9 @@
 
 /*В брифе не указано, но допустим, что оставляем блок по центру и "воздух" справа и слева*/
 
-@media screen and (max-width: 923px){
+@media screen and (max-width: 1023px){
     .profile{
-        margin: 0 auto;
+        width: 286px;
         grid-template-columns: 286px;
         grid-template-areas: 
         'image' 
@@ -25,7 +25,7 @@
 /*Вариант для смартфона*/
 @media screen and (max-width: 767px) {
     .profile{
-        margin: 0 auto;
+        margin-left: calc((100vw - 286px)/2);
         width: 286px;
         margin-bottom: 36px;
     }

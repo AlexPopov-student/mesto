@@ -4,3 +4,10 @@
     margin-bottom: 41px;
     padding: 0;
 }
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .header__logo{
+     margin-left: 27px;
+    }
+}

@@ -14,7 +14,7 @@
 }
 
 /*Вариант для смартфона*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .profile__info{
         margin-left: 12.5px;
         width: 282px;

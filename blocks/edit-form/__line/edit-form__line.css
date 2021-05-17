@@ -1,0 +1,15 @@
+.edit-form__line{
+    margin: 0 auto;
+    width: 358px;
+    height: 0px;
+    border: 1px solid #000;
+    opacity: 0.2;
+    margin-bottom: 30px;
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 767px) {
+    .edit-form__line{
+        width: 238px;
+    }
+}
