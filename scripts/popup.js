@@ -8,7 +8,7 @@ let openPopup = document.querySelector('#popup');
     anewName = document.querySelector('#name');
     anewOccupation = document.querySelector('#occupation');
     editForm = document.querySelector('.edit-form__button');
-    likeCurrent = document.querySelector('.card__white-heart');
+    likeCurrent = document.querySelector('.card__whiteheart');
 
 //открываем форму
 popupToggle.onclick = function(){
@@ -29,7 +29,7 @@ popupClose.onclick = function(){
 
 //включаем "сердечки"
 likeCurrent.onclick = function(){
-    likeCurrent.className = 'card__black-heart';
+    likeCurrent.className = 'card__blackheart';
     }
 
 //а теперь редактируем формочки 

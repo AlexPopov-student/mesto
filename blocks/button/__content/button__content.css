@@ -1,4 +1,4 @@
-.profile__button_content{
+.button__content{
     position: absolute;
     top: 14px;
     left: 64px;
@@ -9,7 +9,7 @@
 
 /*Вариант для смартфона*/
 @media screen and (max-width: 1023px) {
-    .profile__button_content{
+    .button__content{
         top: 17px;
         left: 134px;
         width: 16px;
