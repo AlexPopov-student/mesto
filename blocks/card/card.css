@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: column;
     background-color: white;
+    text-decoration: none;
+    list-style-type: none;
     overflow: hidden;
     position: relative;
 }

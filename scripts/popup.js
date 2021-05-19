@@ -1,15 +1,16 @@
 //прописываем все используемеые переменные
 let openPopup = document.querySelector('#popup');
     popupToggle = document.querySelector('#popup_opened');
-    popupClose = document.querySelector('.edit-form__closemark');
+    popupClose = document.querySelector('.popup__closemark');
     formElement = document.querySelector('.edit-form');
     nameInput = document.querySelector('.profile__title');
     jobInput = document.querySelector('.profile__subtitle');
     anewName = document.querySelector('#name');
     anewOccupation = document.querySelector('#occupation');
     editForm = document.querySelector('.edit-form__button');
-    likeCurrent = document.querySelector('.card__whiteheart');
-
+    likeCurrent = document.querySelectorAll('.card__like-button');
+console.log(likeCurrent);
+ 
 //открываем форму
 popupToggle.onclick = function(){
     popup.style.display="initial";
@@ -25,12 +26,19 @@ popupClose.onclick = function(){
     if (evt.target == popup) {
         popup.style.display="none";
     }
-}
+};
 
 //включаем "сердечки"
-likeCurrent.onclick = function(){
-    likeCurrent.className = 'card__blackheart';
+
+function toggleLike (evt){
+    evt.preventDefault();
+    if (evt.target === evt.currentTarget){
+        evt.target.classList = 'card__like-button_active';
     }
+}
+    for (i = 0; i< likeCurrent.length; i++) {
+    likeCurrent[i].addEventListener('click', toggleLike);
+}
 
 //а теперь редактируем формочки 
 
@@ -38,6 +46,6 @@ function formSubmitHandler (evt) {
     evt.preventDefault(); 
     nameInput.textContent = anewName.value;
     jobInput.textContent = anewOccupation.value;;
-}
+};
 
 formElement.addEventListener('submit', formSubmitHandler); 

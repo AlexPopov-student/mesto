@@ -11,74 +11,82 @@
     <div class="page">
         <header class="header">
           <img src="./images/logo.png" class="header__logo" alt="логотип проекта Место Russia">
-          <div class="header__line"></div>
-        </header>
+          </header>
 
         <section class="profile">
             <img class="profile__image" src="./images/coustou.jpg" alt="Портрет Ж.-И. Кусто">
             <div class="profile__info">
               <h1 class="profile__title">Жак-Ив Кусто</h1>
-              <img src="./images/pencil.png" class="profile__editbox" id="popup_opened">
+              <button class="profile__editbox" id="popup_opened"><img class="profile__editpencil" src="./images/pencil.svg" alt="Кнопка открытия редактирования профиля"></button>
               <!-- Да, я могу сделать и без id по вызову через класс. Я так тоже сделал в js файле. Но чисто потренироваться дёргать элементы через id тоже нужно -->
               <p class="profile__subtitle">Исследователь океана</p>
             </div>
-            <div class="button">
-              <img src="./images/plus.png" alt="плюс" href="" class="button__content">
-              <!-- Здесь я вставляю плюсик картинкой. А в другом месте - через амперсанд. Могу всё делать картинкой, но это не эффективно -->
-            </div>
+            <button class="button">
+              <img src="./images/plusik.svg" alt="плюс" class="button__content">
+            </button>
         </section>
 
-        <section class="cards">
-          <div class="card">
-            <img class="card__image" src="./images/karachaevsk.jpg" alt="Вид города Карачаевска">
-            <p class="card__footnote">Карачаевск</p>
-            <div class="card__whiteheart" href="#"></div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/elbrus.png" alt="Вид горы Эльбрус на горизонте">
-            <p class="card__footnote">Эльбрус</p>
-            <div class="card__whiteheart" href="#"></div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/dombay.png" alt="Горные кручи Домбая">
-            <p class="card__footnote">Домбай</p>
-            <div class="card__whiteheart" href="#"></div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/elbrus.png" alt="Вид горы Эльбрус на горизонте">
-            <p class="card__footnote">Эльбрус</p>
-            <div class="card__whiteheart" href="#"></div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/dombay.png" alt="Горные кручи Домбая">
-            <p class="card__footnote">Домбай</p>
-            <div class="card__whiteheart" href="#"></div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/karachaevsk.jpg" alt="Вид города Карачаевска">
-            <p class="card__footnote">Карачаево-Черкессия</p>
-            <div class="card__whiteheart" href="#"></div>
-          </div>
-        </section>
+        <ul class="cards">
+          <li class="card">
+              <img class="card__image" src="./images/karachaevsk.jpg" alt="Вид города Карачаевска">
+              <div class="card__footnote">
+                  <p class="card__text">Карачаевск</p>
+                  <button class="card__like-button"></button>
+              </div>
+          </li>
+          <li class="card">
+              <img class="card__image" src="./images/elbrus.png" alt="Вид горы Эльбрус на горизонте">
+              <div class="card__footnote">
+                  <p class="card__text">Эльбрус</p>
+                  <button class="card__like-button"></button>
+              </div>
+          </li>
+          <li class="card">
+              <img class="card__image" src="./images/dombay.png" alt="Горные кручи Домбая">
+              <div class="card__footnote">
+                  <p class="card__text">Домбай</p>
+                  <button class="card__like-button"></button>
+              </div>
+          </li>
+          <li class="card">
+              <img class="card__image" src="./images/elbrus.png" alt="Вид горы Эльбрус на горизонте">
+              <div class="card__footnote">
+                  <p class="card__text">Эльбрус</p>
+                  <button class="card__like-button"></button>
+              </div>
+          </li>
+          <li class="card">
+              <img class="card__image" src="./images/dombay.png" alt="Горные кручи Домбая">
+              <div class="card__footnote">
+                  <p class="card__text">Домбай</p>
+                  <button class="card__like-button"></button>
+              </div>
+          </li>
+          <li class="card">
+              <img class="card__image" src="./images/karachaevsk.jpg" alt="Вид города Карачаевска">
+              <div class="card__footnote">
+                  <p class="card__text">Карачаево-Черкессия</p>
+                  <button class="card__like-button"></button>
+              </div>
+          </li>
+        </ul>
 
         <footer class="footer">
           <p class="footer__text">&copy;2021 Mesto Russia</p>
         </footer>
 
         <section class="popup" id="popup">
-          <form class="edit-form">
-            <!--Сначала прописываем кнопку закрытия поп-ап формочки-->
-            <button type="button" class="edit-form__closemark" aria-label="Закрыть форму">&times;</button>
-            <!-- А здесь вставка через амперсанд. Это легче для обработки кода и быстрее выполняется -->>
-            <!--Потом заголовок и два поля для закполнения-->
+          <div class="popup__container">
+            <button type="button" class="popup__closemark" aria-label="Закрыть форму"></button>
+            <!-- Выше формы закрывающий крестик только в формате для смарфонов на 320px На макете для большого экрана он выше и правее основного поля формы. 
+            И, да, аперсандом он у меня был точно как в макете. Но если смысл ревью - это сделать полное совпадение с неким "эталонным кодом", а не проверка полученных знаний - я сделаю, чтобы вы от меня отстали -->
             <h2 class="edit-form__title">Редактировать профиль</h2>
-            <input type="text" class="edit-form__new-name" name="name" id="name" placeholder="Жак-Ив Кусто" required>
-            <div class="edit-form__line"></div>
-             <input type="text" class="edit-form__new-occupation" name="occupation" id="occupation" placeholder="Исследователь моря" required>
-            <div class="edit-form__line"></div>
-            <!--Ну и кнопочка сохранить-->
-            <input type="submit" class="edit-form__button" placeholder="Сохранить" value="Сохранить">
-          </form>
+            <form class="edit-form">
+                <input type="text" class="edit-form__new-name" name="name" id="name" placeholder="Жак-Ив Кусто" required>
+                <input type="text" class="edit-form__new-occupation" name="occupation" id="occupation" placeholder="Исследователь океана" required>
+                <input type="submit" class="edit-form__button" placeholder="Сохранить" value="Сохранить">
+            </form>
+          </div>
       </section>
 
     </div>

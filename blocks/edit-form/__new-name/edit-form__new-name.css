@@ -6,7 +6,9 @@
     line-height: 17px;
     color: black;
     border: none;
-    margin-bottom: 13px;
+    margin-bottom: 30px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
 }
 
 /*Вариант для смартфона*/

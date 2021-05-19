@@ -1,34 +1,34 @@
-.edit-form__closemark{
+.popup__closemark{
     padding: 0;
+    margin: 0;
     position: absolute;
     background: none;
-    color: white;
     border: none;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    background-image: url(../../../images/krestik.svg);
     left: 421.71px;
     top: -40px;
     width: 48px;
     height: 48px;
-    transition: 0.5s; /*чисто для красоты*/
+    box-sizing: border-box;
+    background-size: cover;
 }
 
-.edit-form__closemark:hover{
+.popup__closemark:hover{
     opacity: 0.6;
     cursor: pointer;
 }
 
-.edit-form__closemark:active{
+.popup__closemark:active{
     overflow: hidden;
     margin: 0;
 }
 
 /*Вариант для смартфона*/
 @media screen and (max-width: 767px) {
-    .edit-form__closemark{
+    .popup__closemark{
         left: 245.62px;
-        top: -54.62px;
-        width: 26px;
-        height: 26px;
+        top: -50.39px;
+        width: 36.77px;
+        height: 36.77px;
     }
 }
