@@ -8,7 +8,7 @@
     height: 10px;
 }
 
-.profile__editpencil{
+.profile__editpencil:hover{
     opacity: 0.6;
     cursor: pointer;
 }
