@@ -28,6 +28,6 @@
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/edit-form/__new-name/edit-form__new-name.css);
 @import url(../blocks/edit-form/__new-occupation/edit-form__new-occupation.css);
-@import url(../blocks/edit-form/__title/edit-form__title.css);
+@import url(../blocks/edit-form/_title/edit-form_title.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);

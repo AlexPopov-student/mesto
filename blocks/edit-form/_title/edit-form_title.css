@@ -1,4 +1,4 @@
-.edit-form__title{
+.edit-form_title{
     width: 330px;
     margin-left: 23px;
     margin-top: 34px;
@@ -10,7 +10,7 @@
 
 /*Вариант для смартфона*/
 @media screen and (max-width: 767px) {
-    .edit-form__title{
+    .edit-form_title{
         width: 238px;
         margin-top: 25px;
         margin-bottom: 75px;
