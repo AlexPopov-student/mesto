@@ -8,7 +8,7 @@ let popup = document.querySelector('#popup');
     anewName = document.querySelector('#name');
     anewOccupation = document.querySelector('#occupation');
     editForm = document.querySelector('.edit-form__button');
-    likeCurrent = document.querySelectorAll('.like_white');
+    likeCurrent = document.querySelectorAll('.like');
 console.log(likeCurrent);
  
 //открываем форму

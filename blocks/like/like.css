@@ -1,0 +1,18 @@
+.like{
+    width: 22px;
+    height: 19px;
+    overflow: hidden;
+    border: none;
+    background: none;
+    background-image: url(../../images/white-heart.png);
+}
+
+.like:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.like:active{
+    background-image: url(../../images/black-heart.png);
+    opacity: 1;
+}
