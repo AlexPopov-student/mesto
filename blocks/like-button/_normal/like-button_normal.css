@@ -7,7 +7,7 @@
     background-image: url(../../../images/white-heart.png);
 }
 
-.like-button_normal{
+.like-button_normal:hover{
     opacity: 0.5;
     cursor: pointer;
 }
