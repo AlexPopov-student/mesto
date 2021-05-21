@@ -1,4 +1,4 @@
-.like_active{
+.like__active{
     width: 22px;
     height: 19px;
     z-index: 1;
@@ -8,11 +8,11 @@
     background-image: url(../../../images/black-heart.png);
 }
 
-.like_active:hover{
+.like__active:hover{
     opacity: 0.5;
     cursor: pointer;
 }
 
-.like_active:active{
+.like__active:active{
     background-image: url(../../../images/white-heart.png);
 }

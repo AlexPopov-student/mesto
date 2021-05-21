@@ -1,4 +1,4 @@
-.position_name{
+.position__occupation{
     margin: 0 auto;
     width: 358px;
     font-family: 'Inter', Arial, sans-serif;
@@ -13,7 +13,7 @@
 
 /*Вариант для смартфона*/
 @media screen and (max-width: 767px) {
-    .position_name{
+    .position__occupation{
         width: 238px;
     }
 }
