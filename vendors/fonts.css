@@ -5,26 +5,6 @@
     src: url(./fonts/Inter-Regular.woff2) format('woff2');
     src: url(./fonts/Inter-Regular.woff) format('woff');
     font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-}
-/*Во-первых, в предыдущей работе прежний ревьюер отметил, что я идеально подключил шрифты. Вы уж там разберитесь между собой для начала, что ошибка, а что идеально*/
-/*А, во-вторых, названия городов в карточках не подключаются через Inter font-weight 900*/
-
-@font-face {
-    font-family: 'Inter Bold';
-    src: url(./fonts/Inter-Bold.woff2) format('woff2');
-    src: url(./fonts/Inter-Bold.woff) format('woff');
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter Black';
-    src: url(./fonts/Inter-Black.woff2) format('woff2');
-    src: url(./fonts/Inter-Black.woff) format('woff');
-    font-style: normal;
-    font-weight: 900;
+    font-weight: 500;
     font-display: swap;
 }

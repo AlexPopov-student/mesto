@@ -1,4 +1,4 @@
-.card__like-button{
+.like-button_normal{
     width: 22px;
     height: 19px;
     overflow: hidden;
@@ -7,12 +7,12 @@
     background-image: url(../../../images/white-heart.png);
 }
 
-.card__like-button:hover{
+.like-button_normal{
     opacity: 0.5;
     cursor: pointer;
 }
 
-.card__like-button:active{
+.like-button_normal:active{
     background-image: url(../../../images/black-heart.png);
     opacity: 1;
 }
