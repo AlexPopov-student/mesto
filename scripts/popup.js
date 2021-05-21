@@ -8,7 +8,7 @@ let popup = document.querySelector('#popup');
     anewName = document.querySelector('#name');
     anewOccupation = document.querySelector('#occupation');
     editForm = document.querySelector('.edit-form__button');
-    likeCurrent = document.querySelectorAll('.like__normal');
+    likeCurrent = document.querySelectorAll('.like_normal');
 console.log(likeCurrent);
  
 //открываем форму
@@ -24,7 +24,7 @@ function toggleClass(){
 function toggleLike (evt){
     evt.preventDefault();
     if (evt.target === evt.currentTarget){
-        evt.target.classList = 'like__active';
+        evt.target.classList = 'like_active';
     }
 }
     for (i = 0; i< likeCurrent.length; i++) {

@@ -1,4 +1,4 @@
-.like__normal{
+.like_normal{
     width: 22px;
     height: 19px;
     overflow: hidden;
@@ -7,12 +7,12 @@
     background-image: url(../../../images/white-heart.png);
 }
 
-.like__normal:hover{
+.like_normal:hover{
     opacity: 0.5;
     cursor: pointer;
 }
 
-.like__normal:active{
+.like_normal:active{
     background-image: url(../../../images/black-heart.png);
     opacity: 1;
 }
