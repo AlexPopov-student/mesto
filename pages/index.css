@@ -11,8 +11,8 @@
 @import url(../blocks/profile/__subtitle/profile__subtitle.css);
 @import url(../blocks/profile/__editbox/profile__editbox.css);
 @import url(../blocks/profile/__editpencil/profile__editpencil.css);
-@import url(../blocks/close-button/close-button.css);
-@import url(../blocks/close-button/__content/close-button__content.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/__content/button__content.css);
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/card/card.css);
 @import url(../blocks/like/_active/like_active.css);

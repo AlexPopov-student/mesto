@@ -20,22 +20,11 @@ function toggleClass(){
     popup.classList.toggle('popup_opened');
 }
 
-//включаем "сердечки"
-function toggleLike (evt){
-    evt.preventDefault();
-    if (evt.target === evt.currentTarget){
-        evt.target.classList = 'like_active';
-    }
-}
-    for (i = 0; i< likeCurrent.length; i++) {
-    likeCurrent[i].addEventListener('click', toggleLike);
-}
-
 //а теперь редактируем формочки 
 function formSubmitHandler (evt) {
     evt.preventDefault(); 
     nameInput.textContent = anewName.value;
-    jobInput.textContent = anewOccupation.value;;
+    editForm.addEventListener('click',toggleClass);
 };
 
 formElement.addEventListener('submit', formSubmitHandler); 
