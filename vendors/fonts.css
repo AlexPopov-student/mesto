@@ -1,7 +1,7 @@
 /*Права на используемые шрифты семейства Inter Designed by Rasmus Andersson принадлежат Google, взяты с ресурса https://fonts.google.com/specimen/Inter?query=Inter#standard-styles и использованы в настоящей Практической работе согласно задания*/
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Inter-Regular';
     src: url(./fonts/Inter-Regular.woff2) format('woff2');
     src: url(./fonts/Inter-Regular.woff) format('woff');
     font-style: normal;
