@@ -12,20 +12,25 @@ let popup = document.querySelector('#popup');
 console.log(likeCurrent);
  
 //открываем форму
-popupOpen.addEventListener('click', toggleClass)
+popupOpen.addEventListener('click',toggleClass);
+
 //закрываем форму
-popupClose.addEventListener('click',toggleClass)
+popupClose.addEventListener('click',toggleClass);
+
 //функция-переключатель
 function toggleClass(){
     popup.classList.toggle('popup_opened');
+    if (popup.classList.contains('popup_opened')) {
+        anewName.value = nameInput.textContent;    
+        anewOccupation.value = jobInput.textContent;  
+      }
 }
 
-//а теперь редактируем формочки 
 function formSubmitHandler (evt) {
     evt.preventDefault(); 
     nameInput.textContent = anewName.value;
     jobInput.textContent = anewOccupation.value;
-    editForm.addEventListener('click',toggleClass);
+    toggleClass();
 };
 
 formElement.addEventListener('submit', formSubmitHandler); 
