@@ -24,6 +24,7 @@ function toggleClass(){
 function formSubmitHandler (evt) {
     evt.preventDefault(); 
     nameInput.textContent = anewName.value;
+    jobInput.textContent = anewOccupation.value;
     editForm.addEventListener('click',toggleClass);
 };
 
