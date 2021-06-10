@@ -4,7 +4,7 @@
     position: fixed;
     margin-top: calc((100vh - 540px)/2);
     margin-left: calc((100vw - 816px)/2);
-    width: 816px;   
+    width: 816px;
     z-index: 10;
 }
 
