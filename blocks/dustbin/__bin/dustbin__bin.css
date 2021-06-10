@@ -1,0 +1,12 @@
+.dustbin__bin{
+    width: 15.44px;
+    height: 13.51px;
+    overflow: hidden;
+    border: none;
+    background: none;
+    background-image: url(../../../images/vedro.svg);
+}
+
+.dustbin__bin{
+    cursor: pointer;
+}

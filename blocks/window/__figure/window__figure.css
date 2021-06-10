@@ -1,0 +1,13 @@
+.window__figure{
+    height: 514px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ 
+/*Вариант для смартфона*/
+@media screen and (max-width: 932px) {
+    .window__figure{
+        height: 299px;
+    }
+}

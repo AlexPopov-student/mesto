@@ -1,4 +1,4 @@
-<!-- Проект Mesto Russia. 4-я проектная работа Алексея Попова -->
+<!-- Проект Mesto Russia. 5-я проектная работа Алексея Попова -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -20,73 +20,66 @@
               <button class="profile__editbox" id="popup_opened" type="button"><img class="profile__editpencil" src="./images/pencil.svg" alt="Кнопка открытия редактирования профиля"></button>
               <p class="profile__subtitle">Исследователь океана</p>
             </div>
-            <button class="button" type="button">
+            <button class="button" type="button" id="newCardOpen">
               <img src="./images/plusik.svg" alt="плюс" class="button__content">
             </button>
         </section>
 
         <section>
-        <ul class="cards">
-          <li class="card">
-              <img class="card__image" src="./images/karachaevsk.jpg" alt="Вид города Карачаевска">
-              <div class="card__footnote">
-                  <h3 class="card__text">Карачаевск</h3>
-                  <button class="like" type="button" aria-label="кнопка лайка"></button>
-              </div>
-          </li>
-          <li class="card">
-              <img class="card__image" src="./images/elbrus.jpg" alt="Вид горы Эльбрус на горизонте">
-              <div class="card__footnote">
-                  <h3 class="card__text">Эльбрус</h3>
-                  <button class="like" type="button" aria-label="кнопка лайка"></button>
-              </div>
-          </li>
-          <li class="card">
-              <img class="card__image" src="./images/dombay.jpg" alt="Горные кручи Домбая">
-              <div class="card__footnote">
-                  <h3 class="card__text">Домбай</h3>
-                  <button class="like" type="button" aria-label="кнопка лайка"></button>
-              </div>
-          </li>
-          <li class="card">
-              <img class="card__image" src="./images/elbrus.jpg" alt="Вид горы Эльбрус на горизонте">
-              <div class="card__footnote">
-                  <h3 class="card__text">Эльбрус</h3>
-                  <button class="like" type="button" aria-label="кнопка лайка"></button>
-              </div>
-          </li>
-          <li class="card">
-              <img class="card__image" src="./images/dombay.jpg" alt="Горные кручи Домбая">
-              <div class="card__footnote">
-                  <h3 class="card__text">Домбай</h3>
-                  <button class="like" type="button" aria-label="кнопка лайка"></button>
-              </div>
-          </li>
-          <li class="card">
-              <img class="card__image" src="./images/karachaevsk.jpg" alt="Вид города Карачаевска">
-              <div class="card__footnote">
-                  <h3 class="card__text">Карачаево-Черкессия</h3>
-                  <button class="like" type="button" aria-label="кнопка лайка"></button>
-              </div>
-          </li>
-        </ul>
-      </section>
+            <ul class="cards"></ul>
+        </section>
 
         <footer class="footer">
           <p class="footer__text">&copy;2021 Mesto Russia</p>
         </footer>
 
+        <template id="template">
+          <li class="card">
+            <img class="card__image" id="card__image" src=" " alt=" ">
+            <div class="dustbin" id="dustbin">
+                 <button class="dustbin__cap" type="button" aria-label="крышечка мусорной корзины"></button>
+                 <button class="dustbin__bin" type="button" aria-label="ведро мусорной корзины"></button>
+            </div>
+            <div class="card__footnote">
+                <h3 class="card__text" id="card__text"></h3>
+                <button class="like" id="like" type="button" aria-label="кнопка лайка"></button>
+            </div>
+        </li>
+        </template>
+
         <section class="popup" id="popup">
           <div class="popup__container">
             <button type="button" class="popup__closemark" id="popup__closemark" aria-label="Закрыть форму"></button>
             <h2 class="title">Редактировать профиль</h2>
-            <form class="edit-form">
+            <form class="edit-form" id="edit">
                 <input type="text" class="input" name="name" id="name" placeholder="Имя" required>
                 <input type="text" class="input" name="occupation" id="occupation" placeholder="О себе" required>
-                <input type="submit" class="edit-form__button" value="Сохранить">
+                <input type="submit" id="edit-person" class="edit-form__button" value="Сохранить">
             </form>
           </div>
       </section>
+
+      <section class="popup" id="cardPopup">
+        <div class="popup__container">
+          <button type="button" class="popup__closemark" id="popup__cardclosemark" aria-label="Закрыть форму"></button>
+          <h2 class="title">Новое место</h2>
+          <form class="edit-form" id="create">
+              <input type="text" class="input" name="place" id="place" placeholder="Название" required>
+              <input type="text" class="input" name="link" id="link" placeholder="Ссылка на картинку" required>
+              <input type="submit" id="create-card" class="edit-form__button" value="Создать">
+          </form>
+        </div>
+    </section>
+
+   <section class="window" id="window">
+     <div class="window__container">
+        <button type="button" class="window__closemark" id="window__closemark" aria-label="Закрыть картинку"></button>
+        <figure class="window__figure" id="">
+          <img class="window__image" src="" alt="">
+        </figure>
+        <h4 class="window__text"></h4>
+      </div>
+    </section>
 
     </div>
     <script src="./scripts/popup.js"></script>

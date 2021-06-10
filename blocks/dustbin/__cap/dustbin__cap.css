@@ -1,0 +1,12 @@
+.dustbin__cap{
+    width: 18px;
+    height: 4.49px;
+    overflow: hidden;
+    border: none;
+    background: none;
+    background-image: url(../../../images/kryshechka.svg);
+}
+
+.dustbin__cap:hover{
+    cursor: pointer;
+}

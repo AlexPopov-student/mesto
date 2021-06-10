@@ -1,5 +1,10 @@
 .card__image{
     margin: 0 auto;
     width: 282px;
-    min-height: 282px;
+    height: 282px;
+    overflow: hidden;
+}
+
+.card__image:hover{
+    cursor: pointer;
 }

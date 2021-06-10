@@ -1,0 +1,35 @@
+.window__closemark{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background: none;
+    border: none;
+    background-image: url(../../../images/krestik.svg);
+    left: 815px;
+    top: -47px;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    background-size: cover;
+    z-index: 10;
+}
+
+.window__closemark:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.window__closemark:active{
+    overflow: hidden;
+    margin: 0;
+}
+
+/*Вариант для смартфона*/
+@media screen and (max-width: 932px) {
+    .window__closemark{
+        left: 206px;
+        top: -50.39px;
+        width: 36.77px;
+        height: 36.77px;
+    }
+}
