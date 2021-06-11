@@ -13,6 +13,6 @@
 }
 
 .like_active:active{
-    background-image: url(../../../images/white-heart.png);
+    background-image: url(../../../images/black-heart.png);
     opacity: 1;
 }
