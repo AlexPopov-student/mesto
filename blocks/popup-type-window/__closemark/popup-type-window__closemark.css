@@ -1,4 +1,4 @@
-.window__closemark{
+.popup-type-window__closemark{
     padding: 0;
     margin: 0;
     position: absolute;
@@ -14,19 +14,19 @@
     z-index: 10;
 }
 
-.window__closemark:hover{
+.popup-type-window__closemark:hover{
     opacity: 0.6;
     cursor: pointer;
 }
 
-.window__closemark:active{
+.popup-type-window__closemark:active{
     overflow: hidden;
     margin: 0;
 }
 
 /*Вариант для смартфона*/
 @media screen and (max-width: 932px) {
-    .window__closemark{
+    .popup-type-window__closemark{
         left: 206px;
         top: -50.39px;
         width: 36.77px;

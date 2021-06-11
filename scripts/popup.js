@@ -48,7 +48,7 @@ function createCard(place, link){                                               
     cardImage.alt = place;
     cardImage.addEventListener('click', toggleWindow);                                   //по щелчку на картинку нарисованной карточки запускаем функцию открытия большой картинки
     function toggleWindow(){                                                             //открыли большую картинку
-       windowOpen.classList.toggle('window_opened'); 
+       windowOpen.classList.toggle('popup-type-window_opened'); 
        windowHandler(place, link);                                                        //отправили в функцию заполнения windowHandler значения
     }       
     setCardListeners(cardElement);                                                       //вызвали функцию переключателей
@@ -57,8 +57,8 @@ function createCard(place, link){                                               
 
 renderCards();                                                                           //запускаем функцию генерации карточек
 
-const windowImage = document.querySelector('.window__image');                            //просили объъявить в глобальной области видимости - ок! Объявил. Прогресс кода потрясает
-const windowTitle = document.querySelector('.window__text');
+const windowImage = document.querySelector('.popup-type-window__image');                            //просили объъявить в глобальной области видимости - ок! Объявил. Прогресс кода потрясает
+const windowTitle = document.querySelector('.popup-type-window__text');
 
 function windowHandler(place, link){                                                     //функция-заполнение "большой карточки" картинкой и подписью  
     windowImage.src = link;                                                              //заполнили большую картинку данными 
@@ -67,10 +67,10 @@ function windowHandler(place, link){                                            
     closeImagePopupBtn.addEventListener('click', toggleWindows);                          //слушатель закрытия большого окна
 };
 
-const closeImagePopupBtn = document.querySelector('.window__closemark');
+const closeImagePopupBtn = document.querySelector('#window__closemark');
 
 function toggleWindows(){                                                                //функция-переключатель открыть/закрыть "большую картинку"
-   windowOpen.classList.toggle('window_opened'); 
+   windowOpen.classList.toggle('popup-type-window_opened'); 
 }
 
 function setCardListeners(evt){                                                          //универсальная функция-"слушатель" - вызов других

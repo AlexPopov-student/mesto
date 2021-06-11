@@ -1,4 +1,4 @@
-.window__figure{
+.popup-type-window__figure{
     height: 514px;
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
  
 /*Вариант для смартфона*/
 @media screen and (max-width: 932px) {
-    .window__figure{
+    .popup-type-window__figure{
         height: 299px;
     }
 }

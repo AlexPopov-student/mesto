@@ -1,4 +1,4 @@
-.window__container{ 
+.popup-type-window__container{ 
     margin: 0;
     padding: 0;
     position: fixed;
@@ -10,7 +10,7 @@
 
 /*Вариант для смартфона*/
 @media screen and (max-width: 932px) {
-    .window__container{
+    .popup-type-window__container{
         margin-top: calc((100vh - 299px)/2);
         margin-left: calc((100vw - 240px)/2);
         width: 240px;
