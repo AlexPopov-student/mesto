@@ -1,29 +1,32 @@
 const popup = document.querySelector('#popup_type_edit-profile');
-    cardPopup = document.querySelector('#popup_type_add-card');
-    openEditProfilePopupBtn = document.querySelector('#popup_opened');
-    closeEditProfilePopupBtn= document.querySelector('#popup__closemark');
-    closeAddCardPopupBtn = document.querySelector('#popup__cardclosemark')
-    formElement = document.querySelector('.edit-form');
-    nameInput = document.querySelector('.profile__title');
-    jobInput = document.querySelector('.profile__subtitle');
-    userName = document.querySelector('#name');
-    userOccupation = document.querySelector('#occupation');
-    windowOpen = document.querySelector('#popup_type_image');                                    
+      cardPopup = document.querySelector('#popup_type_add-card');
+      windowOpen = document.querySelector('#popup_type_image'); 
+      openEditProfilePopupBtn = document.querySelector('#popup_opened');
+      closeEditProfilePopupBtn= document.querySelector('#popup__closemark');
+      closeAddCardPopupBtn = document.querySelector('#popup__cardclosemark')
+      formElement = document.querySelector('.edit-form');
+      nameInput = document.querySelector('.profile__title');
+      jobInput = document.querySelector('.profile__subtitle');
+      userName = document.querySelector('#name');
+      userOccupation = document.querySelector('#occupation');       
 
-openEditProfilePopupBtn.addEventListener('click',togglePopup);                           //открываем форму редактирования путешественника
-closeEditProfilePopupBtn.addEventListener('click',togglePopup);                          //закрываем форму редактирования путешественника
+openEditProfilePopupBtn.addEventListener('click',() => togglePopup(popup));              //открываем форму редактирования путешественника
+closeEditProfilePopupBtn.addEventListener('click',() => togglePopup(popup));             //закрываем форму редактирования путешественника
 
-function togglePopup(){                                                                  //функция-переключатель
-    popup.classList.toggle('popup_opened');
+function setNewData(){
     userName.value = nameInput.textContent;    
     userOccupation.value = jobInput.textContent;  
+}
+
+function togglePopup(evt){                                                               //Просили одну функцию-переключатель? Получите. И останьте, пожалуйста. Всё по брифу, всё работает
+    evt.classList.toggle('popup-type-window_opened');
 }
 
 function formEditProfileSubmitHandler (evt) {                                            //функция занесения нового персонажа 
     evt.preventDefault(); 
     nameInput.textContent = userName.value;
     jobInput.textContent = userOccupation.value;
-    togglePopup();
+    togglePopup(popup);
 }
 
 formElement.addEventListener('submit', formEditProfileSubmitHandler);                    //фиксируем нового персонажа
@@ -48,8 +51,8 @@ function createCard(place, link){                                               
     cardImage.alt = place;
     cardImage.addEventListener('click', toggleWindow);                                   //по щелчку на картинку нарисованной карточки запускаем функцию открытия большой картинки
     function toggleWindow(){                                                             //открыли большую картинку
-       windowOpen.classList.toggle('popup-type-window_opened'); 
-       windowHandler(place, link);                                                        //отправили в функцию заполнения windowHandler значения
+       togglePopup(windowOpen); 
+       windowHandler(place, link);                                                       //отправили в функцию заполнения windowHandler значения
     }       
     setCardListeners(cardElement);                                                       //вызвали функцию переключателей
     cards.prepend(cardElement);                                                          //добавили карточку в обойму cards ('ul')
@@ -57,23 +60,19 @@ function createCard(place, link){                                               
 
 renderCards();                                                                           //запускаем функцию генерации карточек
 
-const windowImage = document.querySelector('.popup-type-window__image');                            //просили объъявить в глобальной области видимости - ок! Объявил. Прогресс кода потрясает
+const windowImage = document.querySelector('.popup-type-window__image');                 //просили объъявить в глобальной области видимости - ок! Объявил. Прогресс кода потрясает
 const windowTitle = document.querySelector('.popup-type-window__text');
 
 function windowHandler(place, link){                                                     //функция-заполнение "большой карточки" картинкой и подписью  
     windowImage.src = link;                                                              //заполнили большую картинку данными 
     windowTitle.textContent = place;
     windowImage.alt = place;
-    closeImagePopupBtn.addEventListener('click', toggleWindows);                          //слушатель закрытия большого окна
 };
 
 const closeImagePopupBtn = document.querySelector('#window__closemark');
+closeImagePopupBtn.addEventListener('click',() => togglePopup(windowOpen));         //слушатель закрытия большого окна
 
-function toggleWindows(){                                                                //функция-переключатель открыть/закрыть "большую картинку"
-   windowOpen.classList.toggle('popup-type-window_opened'); 
-}
-
-function setCardListeners(evt){                                                          //универсальная функция-"слушатель" - вызов других
+function setCardListeners(evt){                                                         //универсальная функция-"слушатель" - вызов других
     evt.querySelector('#like').addEventListener('click',handleLike);
     evt.querySelector('.dustbin').addEventListener('click',deconsteCard);
 }
@@ -92,23 +91,14 @@ function submitAddCardForm(evt){
     evt.preventDefault();
     createCard(inputPlace.value, inputLink.value);
     document.querySelector('#create').reset();
-    closeFormCard();
+    togglePopup(cardPopup);
 }
     
 const addCardButton = document.querySelector('#newCardOpen');                            //открываем формочку внесения новой карточки
 
-addCardButton.addEventListener('click', openFormCard);                                   
+addCardButton.addEventListener('click',() => togglePopup(cardPopup));                                   
 
-function openFormCard(){
-    cardPopup.classList.toggle('popup_opened')
-}    
-
-function closeFormCard(){
-    cardPopup.classList.toggle('popup_opened')                                          //закрываем формочку новой карточки  
-}
-
-closeAddCardPopupBtn.addEventListener('click', closeFormCard);                                  
+closeAddCardPopupBtn.addEventListener('click',() => togglePopup(cardPopup));                                  
 
 const formAddCard = document.querySelector('#create');                                   //запускаем функцию генерации новых карточек
       formAddCard.addEventListener('submit', submitAddCardForm);
-
