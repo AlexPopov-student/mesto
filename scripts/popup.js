@@ -19,7 +19,7 @@ function fillInFormEditProfileInputs(){                                         
     togglePopup(popupEditProfile);
 }
 
-function togglePopup(popup){                                                               //Просили одну функцию-переключатель? Получите. И останьте, пожалуйста. Всё по брифу, всё работает
+function togglePopup(popup){                                                             //Ключевая функция-переключатель для ВСЕХ поп-апов 
     popup.classList.toggle('popup-type-window_opened');
 }
 
@@ -35,7 +35,7 @@ formEditProfile.addEventListener('submit', formEditProfileSubmitHandler);       
 const cards = document.querySelector('.cards');                                          //объявляем переменные необходимые для клонирования шаблона
 const template = document.querySelector('#template').content;
 
-function renderCards(){                                                                  // запустили обработку функции renderCard по массиву initialCards
+function renderCards(){                                                                  //запустили обработку функции renderCard по массиву initialCards
     initialCards.forEach(renderCard);
 }
 
@@ -53,7 +53,7 @@ function createCard(place, link){                                               
     cardImage.alt = place;                                 
     cardImage.addEventListener('click',()=>  windowHandler(place, link));                //по щелчку на картинку нарисованной карточки запускаем функцию открытия большой картинк                                                                                      //по щелчку на картинку нарисованной карточки запускаем функцию открытия большой картинки
     setCardListeners(cardElement);                                                       //вызвали функцию переключателей
-    return cardElement;                                                                  //как же вы меня достали...
+    return cardElement;                                                                  //останавливаем работу функции, чтобы вернуть данные в renderCard
 }
 
 renderCards();                                                                           //запускаем функцию генерации карточек
@@ -63,7 +63,7 @@ function setCardListeners(evt){                                                 
     evt.querySelector('.dustbin').addEventListener('click',deleteCard);   
 }
 
-const windowImage = document.querySelector('.popup-type-window__image');                 //просили объъявить в глобальной области видимости - ок! Объявил. Прогресс кода потрясает
+const windowImage = document.querySelector('.popup-type-window__image');                 
 const windowTitle = document.querySelector('.popup-type-window__text');
 
 function windowHandler(place, link){ 
@@ -89,7 +89,7 @@ const inputLink = document.querySelector('#link').value;
 const formAddCard = document.querySelector('#create'); 
 const addCardButton = document.querySelector('#newCardOpen');                            //открываем формочку внесения новой карточки
 
-function submitAddCardForm(evt){                                                         //отвалите уже нахрен!
+function submitAddCardForm(evt){                                                         //готовим даныне для загрузки новой карточки
     evt.preventDefault();
     renderCard ({place: inputPlace, link: inputLink});
     formAddCard.reset();                                                                 //стираем занесённые данные 
